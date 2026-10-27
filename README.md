@@ -12,7 +12,7 @@
 | 单触觉项目 | [项目说明](projects/o10_single_tactile/README.md) · [证据与路线](projects/o10_single_tactile/docs/DATA_REVIEW.md) | 只读触觉链路与基线数据已验证；自动抓取、接触停止和持握闭环尚未实现 |
 | 触觉相关资料 | [阅读与方法指南](docs/references/触觉相关资料.md) · [Word 原文](docs/references/触觉相关资料.docx) | 已查阅资料、适用范围及实验建议；引用外部项目不代表完成复现 |
 
-完整文件入口见 [文档索引](docs/README.md)，数据字段、样本数和实验解释见 [测试数据说明](docs/data/README.md)。
+首次拉取请先看 [部署与未收录内容说明](docs/DEPLOYMENT_NOTES.md)。完整文件入口见 [文档索引](docs/README.md)，数据字段、样本数和实验解释见 [测试数据说明](docs/data/README.md)。
 
 ## 仓库结构
 
@@ -31,7 +31,9 @@
 └── THIRD_PARTY_NOTICES.md
 ```
 
-四个子项目保留原有内部目录和兄弟目录关系。两份 SDK 有少量差异，分别保留以还原各项目状态；Git 会复用相同内容的对象。SDK 保留 Linux x64/aarch64 的库和 wheel、Windows 示例与其余库、demo 和 API 文档，模型含 URDF、MJCF 和网格。Windows 云通信 DLL 及包含它的 wheel 因内嵌私钥未公开，详见 [排除说明](docs/archive/README.md#排除内容)。
+四个子项目保留原有内部目录和兄弟目录关系。两份 SDK 有少量差异，分别保留以还原各项目状态；Git 会复用相同内容的对象。SDK 保留 Linux x64/aarch64、Windows x64 的库和 wheel、demo 和 API 文档，模型含 URDF、MJCF 和网格。此前排除的 12 个 Windows 文件已与官方公开的原始提交逐项核对并原样补齐；两份 SDK 均不再缺少该提交的文件，详见 [官方仓库对比记录](docs/archive/UPSTREAM_COMPARISON.md)。
+
+项目继续使用 SDK **1.1.5**。本次核对的官方最新主分支为 **1.1.10**；该版本属于后续升级，不覆盖当前项目已使用的 SDK 和 USB 配置。
 
 ## 获取与离线检查
 

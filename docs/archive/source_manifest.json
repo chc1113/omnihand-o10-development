@@ -17115,8 +17115,110 @@
       "source_sha256": "c0f1200f26edba167eb4944ca2b2a43adb5e987275c2d713decb7bf5bc07c6f0",
       "export_sha256": "c0f1200f26edba167eb4944ca2b2a43adb5e987275c2d713decb7bf5bc07c6f0",
       "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "kind": "file",
+      "source_sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "export_sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "export_sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "export_sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "export_sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "export_sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "modified": false
+    },
+    {
+      "source": "o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "destination": "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "export_sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "kind": "file",
+      "source_sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "export_sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "export_sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "export_sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "export_sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "export_sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "modified": false
+    },
+    {
+      "source": "o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "destination": "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "kind": "file",
+      "source_sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "export_sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "modified": false
     }
   ],
   "archive_date": "2026-10-27",
-  "symlink_hash_convention": "SHA-256 of os.readlink(path).encode(), not target bytes"
+  "symlink_hash_convention": "SHA-256 of os.readlink(path).encode(), not target bytes",
+  "upstream_completion_date": "2026-10-27",
+  "upstream_reference": {
+    "repository": "https://github.com/AgibotTech/agillink_omnihand_sdk",
+    "commit": "c53ddfec190889e89f8a1ef39efc00f84ac706c3",
+    "sdk_version": "1.1.5"
+  }
 }

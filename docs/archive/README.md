@@ -16,13 +16,15 @@
 
 ## 两份 SDK 的差异
 
-USB 项目保留现场使用的 SDK，触觉项目保留其资料来源的 SDK 状态。两者除以下文件外内容一致；公开副本均应用下文相同的 Windows 排除项。
+USB 项目保留现场使用的 SDK，触觉项目保留其资料来源的 SDK 状态。两者除以下文件外内容一致；两份 Windows SDK 均已补齐到官方原始提交的文件范围。
 
 - USB SDK 的 `README_zh_cn.md` 含项目编写的 USB 新手指南。
 - USB SDK 的 `linux/x64/ros2/humble/share/omnihand_node/config/omnihand_2025_node.yaml` 含现场 USB 配置。
 - 仅 USB SDK 有 `linux/x64/99-omnihand-usb.rules`。
 
 原厂 SDK 压缩包及模型压缩包的来源标识和哈希见 [单触觉 SOURCES.md](../../projects/o10_single_tactile/SOURCES.md)。SDK 和模型已有目录结构、二进制版本与许可证声明保留，参见 [第三方声明](../../THIRD_PARTY_NOTICES.md)。
+
+2026-10-27 与官方公开仓库核对：SDK 1.1.5 基准提交含 993 个文件，两份副本当前均无缺失项；触觉 SDK 的这 993 项内容与文件模式全部一致，USB SDK 保留上列两处内容调整及新增规则。完整对比、恢复文件哈希和最新主分支的版本区别见 [UPSTREAM_COMPARISON.md](UPSTREAM_COMPARISON.md) 与 [upstream_comparison.json](upstream_comparison.json)。
 
 ## 发布副本调整
 
@@ -39,9 +41,9 @@ USB 项目保留现场使用的 SDK，触觉项目保留其资料来源的 SDK �
 
 ## 排除内容
 
-[exclusions.json](exclusions.json) 记录全部排除根目录/文件和原因。环境、缓存、失效环境路径不发布；通过环境脚本重建。原始测试数据、Word、图片、模型网格和 Linux SDK 库均保留。
+[exclusions.json](exclusions.json) 记录当前排除的 13 个环境/缓存路径，包含虚拟环境、失效环境路径、环境位置文件和 Python 缓存。通过环境脚本重建；逐项影响及部署步骤见 [部署与未收录内容说明](../DEPLOYMENT_NOTES.md)。原始测试数据、Word、图片、模型网格和 SDK 库均保留。
 
-两份 SDK 中的 `windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll`，以及各自包含该 DLL 的 5 个 Windows Python wheel（3.10–3.14），共 12 个文件未纳入公开副本：检查发现厂商 DLL 内嵌完整 PEM 私钥。排除记录保留原文件 SHA-256，不复制密钥正文、不修改其他厂商库。需要完整 Windows SDK 时从厂商官方渠道获取；对应目录有 `PUBLIC_ARCHIVE_NOTE.md`。Linux USB 开发链路不依赖这些文件。
+首次归档因厂商 DLL 内嵌完整 PEM 私钥，曾排除两份 SDK 的 `windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll` 及各自 5 个 Windows Python wheel（3.10–3.14），共 12 个文件。用户提供官方公开仓库后，已确认这 6 种文件在原始提交公开可获取，且与本机原件逐字节一致，现已全部恢复，未修改或重打包厂商二进制。历史排除原因、官方固定提交下载地址和哈希保存在 [upstream_comparison.json](upstream_comparison.json)，已恢复项不再列于当前排除清单。对应 Windows 目录的 `PUBLIC_ARCHIVE_NOTE.md` 已更新为补齐状态。
 
 项目原目录和先前私有 SDK 备份仓库均未修改。本仓库是新的公开归档，不替换原私有备份。
 

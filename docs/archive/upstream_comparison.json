@@ -1,0 +1,237 @@
+{
+  "checked_at_utc": "2026-10-27T12:05:55+00:00",
+  "official_repository": "https://github.com/AgibotTech/agillink_omnihand_sdk",
+  "baseline_commit": "c53ddfec190889e89f8a1ef39efc00f84ac706c3",
+  "baseline_sdk_version": "1.1.5",
+  "latest_checked_commit": "1b552ea77c2d61adef327d179dc9f6b47405c628",
+  "latest_checked_sdk_version": "1.1.10",
+  "comparison_method": "Git tree paths, blob SHA-1 and file modes; SHA-256 of restored downloads and original local source; no vendor code executed",
+  "before": {
+    "baseline": {
+      "commit": "c53ddfec190889e89f8a1ef39efc00f84ac706c3",
+      "truncated": false,
+      "file_count": 993,
+      "projects": {
+        "o10_usb_phase1": {
+          "identical_count": 985,
+          "different_count": 2,
+          "missing_count": 6,
+          "extra_count": 2,
+          "different": [
+            "README_zh_cn.md",
+            "linux/x64/ros2/humble/share/omnihand_node/config/omnihand_2025_node.yaml"
+          ],
+          "missing": [
+            "windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+            "windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl"
+          ],
+          "extra": [
+            "linux/x64/99-omnihand-usb.rules",
+            "windows/x64/PUBLIC_ARCHIVE_NOTE.md"
+          ]
+        },
+        "o10_single_tactile": {
+          "identical_count": 987,
+          "different_count": 0,
+          "missing_count": 6,
+          "extra_count": 1,
+          "different": [],
+          "missing": [
+            "windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+            "windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+            "windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl"
+          ],
+          "extra": [
+            "windows/x64/PUBLIC_ARCHIVE_NOTE.md"
+          ]
+        }
+      }
+    },
+    "latest": {
+      "commit": "1b552ea77c2d61adef327d179dc9f6b47405c628",
+      "truncated": false,
+      "file_count": 4097,
+      "projects": {
+        "o10_usb_phase1": {
+          "identical_count": 442,
+          "different_count": 348,
+          "missing_count": 3307,
+          "extra_count": 199
+        },
+        "o10_single_tactile": {
+          "identical_count": 443,
+          "different_count": 347,
+          "missing_count": 3307,
+          "extra_count": 198
+        }
+      }
+    }
+  },
+  "restored_files": [
+    {
+      "path": "windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "bytes": 660480,
+      "git_blob_sha1": "122228a5b0f1ae238d885da43986bf88a888aebf",
+      "sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+      "mode": "100644",
+      "original_local_sha256": "459e095f55a3c99bd6aa5a4906e92437e629fafd016bdfa6359b899f6b714729",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/cpp/bin/kerneldlls/ZlgCloud.dll"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    },
+    {
+      "path": "windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "bytes": 10390262,
+      "git_blob_sha1": "0c8a8314212b27a9e677a9fe4217ecd46ec1b6fc",
+      "sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+      "mode": "100644",
+      "original_local_sha256": "73838514e174a91001df8bb52ec3c3255e60ed2fc456b7eac829dc81f6ca0358",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp310-cp310-win_amd64.whl"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    },
+    {
+      "path": "windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "bytes": 10391308,
+      "git_blob_sha1": "f0987d63c41cde20c4aa0e154962ebd5fd4a4ce3",
+      "sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+      "mode": "100644",
+      "original_local_sha256": "0dbc4513ab16d5c2be18514ee6c5fa00389bc733a989e0650502433b4e817f9f",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp311-cp311-win_amd64.whl"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    },
+    {
+      "path": "windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "bytes": 10392861,
+      "git_blob_sha1": "e8e1ffeb80ef92c53b2aa3eb2fe66995a59f0ded",
+      "sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+      "mode": "100644",
+      "original_local_sha256": "fa981035766699bb54c207ea8b79f06ec3aaff5be7c52f6e908eca9f141a307a",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp312-cp312-win_amd64.whl"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    },
+    {
+      "path": "windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "bytes": 10392899,
+      "git_blob_sha1": "568b934ada8c3c8e559f603b6610a0f19620ae23",
+      "sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+      "mode": "100644",
+      "original_local_sha256": "851d92fbdc26dab57921189b6f0711020ed4edb0d1c577b67c308bfc0dd2f221",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp313-cp313-win_amd64.whl"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    },
+    {
+      "path": "windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "bytes": 10393411,
+      "git_blob_sha1": "c49d01f18e87e4640b55f8a584fb16d76286fb6c",
+      "sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "official_url": "https://raw.githubusercontent.com/AgibotTech/agillink_omnihand_sdk/c53ddfec190889e89f8a1ef39efc00f84ac706c3/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+      "mode": "100644",
+      "original_local_sha256": "89fa8618bdd34dcc392bf8ee4fc9fd636cfae5e50af9de917cc55c15b6d913e3",
+      "destinations": [
+        "projects/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl",
+        "projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/windows/x64/python/omnihand-1.1.5-cp314-cp314-win_amd64.whl"
+      ],
+      "previous_exclusion_reason": "Public archive excludes vendor Windows ZlgCloud.dll and wheels containing it because the DLL embeds complete PEM private keys; original local files are untouched.",
+      "resolution": "Retrieved from the public official baseline commit, verified byte-identical to original local files, restored unchanged to both SDK copies; no private-key text is reproduced in documentation."
+    }
+  ],
+  "after": {
+    "baseline": {
+      "commit": "c53ddfec190889e89f8a1ef39efc00f84ac706c3",
+      "tree_truncated": false,
+      "official_file_count": 993,
+      "projects": {
+        "o10_usb_phase1": {
+          "identical_count": 991,
+          "different_count": 2,
+          "missing_count": 0,
+          "extra_count": 2,
+          "mode_difference_count": 0,
+          "different": [
+            {
+              "path": "README_zh_cn.md",
+              "official_blob_sha1": "cf9f719b1a7d02bf8c31838d3a6b039f24f3934a",
+              "project_blob_sha1": "9d1ad6545355b065ca74c43ff93d616829ec51c0"
+            },
+            {
+              "path": "linux/x64/ros2/humble/share/omnihand_node/config/omnihand_2025_node.yaml",
+              "official_blob_sha1": "9dd25a0287b39e7f924f77f621501c0ac45b3798",
+              "project_blob_sha1": "d31a925d6cf4e233fed45f421345a46a88a1ec41"
+            }
+          ],
+          "missing": [],
+          "extra": [
+            "linux/x64/99-omnihand-usb.rules",
+            "windows/x64/PUBLIC_ARCHIVE_NOTE.md"
+          ],
+          "mode_differences": []
+        },
+        "o10_single_tactile": {
+          "identical_count": 993,
+          "different_count": 0,
+          "missing_count": 0,
+          "extra_count": 1,
+          "mode_difference_count": 0,
+          "different": [],
+          "missing": [],
+          "extra": [
+            "windows/x64/PUBLIC_ARCHIVE_NOTE.md"
+          ],
+          "mode_differences": []
+        }
+      }
+    },
+    "latest": {
+      "commit": "1b552ea77c2d61adef327d179dc9f6b47405c628",
+      "tree_truncated": false,
+      "official_file_count": 4097,
+      "projects": {
+        "o10_usb_phase1": {
+          "identical_count": 443,
+          "different_count": 348,
+          "missing_count": 3306,
+          "extra_count": 204,
+          "mode_difference_count": 48
+        },
+        "o10_single_tactile": {
+          "identical_count": 444,
+          "different_count": 347,
+          "missing_count": 3306,
+          "extra_count": 203,
+          "mode_difference_count": 48
+        }
+      }
+    }
+  }
+}
