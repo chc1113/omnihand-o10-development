@@ -1,0 +1,23 @@
+# OmniHand 2025 SDK - USB Device Permission Rules
+# Generated on 2026年 06月 21日 星期日 21:22:04 CST
+
+# Generic rules for USB serial devices
+KERNEL=="ttyACM[0-9]*", MODE="0666", GROUP="dialout"
+KERNEL=="ttyUSB[0-9]*", MODE="0666", GROUP="dialout"
+KERNEL=="ttySWK[0-9]*", MODE="0666", GROUP="dialout"
+
+# Generic rule for CAN devices
+SUBSYSTEM=="usb", ATTRS{idVendor}=="3068", ATTRS{idProduct}=="0009", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="3068", ATTRS{idProduct}=="000a", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="3068", ATTRS{idProduct}=="000b", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04da", ATTRS{idProduct}=="0f01", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="04da", ATTRS{idProduct}=="0f02", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="a8fa", ATTRS{idProduct}=="8598", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="3325", ATTRS{idProduct}=="0049", MODE="0666"
+
+# Detected devices (with USB port):
+# STM32 VCP Serial 315B375B3235
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", ATTRS{serial}=="315B375B3235", MODE="0666"
+
+

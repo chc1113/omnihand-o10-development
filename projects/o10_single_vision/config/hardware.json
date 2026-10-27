@@ -1,0 +1,26 @@
+{
+  "port": "auto",
+  "device_id": 1,
+  "camera_index": 0,
+  "camera_width": 640,
+  "camera_height": 480,
+  "control_hz": 30,
+  "readback_hz": 2,
+  "required_hand": "Right",
+  "min_handedness_score": 0.65,
+  "valid_frames_to_arm": 12,
+  "lost_hand_timeout_s": 0.25,
+  "max_step_fraction": 0.05,
+  "workspace_fraction": 1.0,
+  "velocity_scale": 6.0,
+  "smooth_alpha": 0.25,
+  "model_config": "config/omnihand_right_model.json",
+  "calibration_profile": "config/calibration_right.json",
+  "gesture_preset_profile": "config/official_gestures_right.json",
+  "require_calibration": true,
+  "log_path": "logs/real_hand_session.jsonl",
+  "joint_mapping": {
+    "R_thumb_abad_joint": {"invert": true},
+    "R_index_abad_joint": {"invert": true}
+  }
+}

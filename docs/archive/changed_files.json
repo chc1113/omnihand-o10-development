@@ -1,0 +1,10 @@
+[
+  "docs/references/触觉相关资料.md",
+  "projects/o10_single_vision/.gitignore",
+  "projects/o10_single_vision/README.md",
+  "projects/o10_single_vision/config/omnihand_right_model.json",
+  "projects/o10_single_vision/config/simulation.json",
+  "projects/o10_single_vision/requirements.txt",
+  "projects/o10_single_vision/scripts/run_sim.sh",
+  "projects/o10_single_vision/scripts/setup_env.sh"
+]

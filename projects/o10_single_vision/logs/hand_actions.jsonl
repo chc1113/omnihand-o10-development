@@ -1,0 +1,23 @@
+{"wall_time": 1789379351.3843663, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379378.1497061, "action": "OPEN", "handedness": "Right", "bends": [0.07252117847584509, 0.2143109284379175, 0.1833179581488066, 0.25470890276999536, 0.277893641736639], "pinch_distance": 0.4563074085298114}
+{"wall_time": 1789379378.3165665, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379382.626058, "action": "HAND", "handedness": "Right", "bends": [0.04881170261508123, 0.046438062151244824, 0.18308228826235495, 0.2824676872970074, 0.3043476138728447], "pinch_distance": 0.8767490743916913}
+{"wall_time": 1789379382.8586135, "action": "OPEN", "handedness": "Right", "bends": [0.025467520422447706, 0.086815636693869, 0.18732080436987553, 0.2589661141760814, 0.28535972433110784], "pinch_distance": 0.9154519517592858}
+{"wall_time": 1789379382.99281, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379383.2541292, "action": "OPEN", "handedness": "Right", "bends": [0.0923078473781834, 0.026488533023824402, 0.03660947610010635, 0.056878796949085424, 0.1019288265095413], "pinch_distance": 0.959669460536164}
+{"wall_time": 1789379383.6169865, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379384.0105634, "action": "OPEN", "handedness": "Right", "bends": [0.1034170159967141, 0.03169357064301084, 0.05663285108185414, 0.05943845905961166, 0.07125340555869775], "pinch_distance": 0.8959948916162928}
+{"wall_time": 1789379386.0187905, "action": "FIST", "handedness": "Right", "bends": [0.1363323367815433, 1.0, 1.0, 1.0, 1.0], "pinch_distance": 0.4887917135613294}
+{"wall_time": 1789379386.6427264, "action": "OPEN", "handedness": "Right", "bends": [0.05380343968555053, 0.05234492229383431, 0.12068954063116644, 0.11833362747488559, 0.0757131318364252], "pinch_distance": 0.6939384532550066}
+{"wall_time": 1789379387.4981933, "action": "HAND", "handedness": "Right", "bends": [0.031478137931898346, 0.09670207839871614, 0.24937653276504898, 0.3072130726297839, 0.5055970272046981], "pinch_distance": 0.4460092941438117}
+{"wall_time": 1789379387.6304994, "action": "PINCH", "handedness": "Right", "bends": [0.027537866937596165, 0.44980447754027475, 0.7005543774431717, 0.7255508634004812, 0.634377945702412], "pinch_distance": 0.17888520179477205}
+{"wall_time": 1789379388.0579646, "action": "OPEN", "handedness": "Right", "bends": [0.06432341793260889, 0.09613590268337316, 0.14075055168889844, 0.1420031702554959, 0.15982428198779622], "pinch_distance": 0.6005743690899629}
+{"wall_time": 1789379390.5949671, "action": "PINCH", "handedness": "Right", "bends": [0.06473321964945762, 0.9025613889129704, 0.9308912593884078, 0.9154654228139615, 0.8053768832337137], "pinch_distance": 0.20650421286283172}
+{"wall_time": 1789379391.746387, "action": "OPEN", "handedness": "Right", "bends": [0.10810309940793877, 0.03979933756306036, 0.08742743133155727, 0.09291810349257548, 0.06323000263291988], "pinch_distance": 0.7315082742387431}
+{"wall_time": 1789379392.212937, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379393.9224648, "action": "HAND", "handedness": "Right", "bends": [0.10611904772947606, 0.13510802436116545, 0.5398828120919938, 0.4994531634834003, 0.39351551154088815], "pinch_distance": 0.9584284551820014}
+{"wall_time": 1789379394.1499336, "action": "POINT", "handedness": "Right", "bends": [0.0642750312800149, 0.16926292264128143, 0.6332778883771478, 0.6680732354135597, 0.5215413415911188], "pinch_distance": 0.655644427378622}
+{"wall_time": 1789379394.4171295, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789379396.489936, "action": "OPEN", "handedness": "Right", "bends": [0.1090708945117949, 0.18685412203942725, 0.09729434855436125, 0.09448358286379789, 0.08157490511603714], "pinch_distance": 2.0493584679740655}
+{"wall_time": 1789379396.7610545, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}
+{"wall_time": 1789381941.4989796, "action": "NO_HAND", "handedness": null, "bends": null, "pinch_distance": null}

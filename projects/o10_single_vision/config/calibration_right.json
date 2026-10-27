@@ -1,0 +1,108 @@
+{
+  "version": 4,
+  "feature_algorithm": "thumb_fist_target_and_curl_gated_spread",
+  "generated_wall_time": 1789560136.464548,
+  "anchor_pairs": {
+    "thumb_curl": {
+      "low_pose": "neutral",
+      "high_pose": "thumb_bent"
+    },
+    "index_curl": {
+      "low_pose": "neutral",
+      "high_pose": "fist"
+    },
+    "middle_curl": {
+      "low_pose": "neutral",
+      "high_pose": "fist"
+    },
+    "ring_curl": {
+      "low_pose": "neutral",
+      "high_pose": "fist"
+    },
+    "pinky_curl": {
+      "low_pose": "neutral",
+      "high_pose": "fist"
+    },
+    "index_spread": {
+      "low_pose": "together",
+      "high_pose": "spread"
+    },
+    "ring_spread": {
+      "low_pose": "together",
+      "high_pose": "spread"
+    },
+    "pinky_spread": {
+      "low_pose": "together",
+      "high_pose": "spread"
+    },
+    "thumb_roll": {
+      "low_pose": "neutral",
+      "high_pose": "thumb_abducted"
+    },
+    "thumb_abad": {
+      "low_pose": "neutral",
+      "high_pose": "thumb_opposed"
+    },
+    "thumb_cross": {
+      "low_pose": "neutral",
+      "high_pose": "thumb_opposed"
+    }
+  },
+  "feature_ranges": {
+    "thumb_curl": {
+      "low": 0.07899345853840287,
+      "high": 0.4495151255210542,
+      "invert": false
+    },
+    "index_curl": {
+      "low": 0.1730103596486665,
+      "high": 0.7666942202654633,
+      "invert": false
+    },
+    "middle_curl": {
+      "low": 0.17034842344689718,
+      "high": 0.7672621881977989,
+      "invert": false
+    },
+    "ring_curl": {
+      "low": 0.12776107168744402,
+      "high": 0.7504727978956626,
+      "invert": false
+    },
+    "pinky_curl": {
+      "low": 0.16458584199521203,
+      "high": 0.8088581511694865,
+      "invert": false
+    },
+    "index_spread": {
+      "low": 0.3001639767424482,
+      "high": 0.7593363932162663,
+      "invert": false
+    },
+    "ring_spread": {
+      "low": -0.39871352103010954,
+      "high": -0.20368218782004094,
+      "invert": false
+    },
+    "pinky_spread": {
+      "low": -0.3251817554410575,
+      "high": 0.11236185620034578,
+      "invert": false
+    },
+    "thumb_roll": {
+      "low": -0.8112618396657008,
+      "high": -0.33635118855128393,
+      "invert": true
+    },
+    "thumb_abad": {
+      "low": 0.3710752483530406,
+      "high": 0.8735071192279862,
+      "invert": false
+    },
+    "thumb_cross": {
+      "low": -0.7812781819852948,
+      "high": 0.02244791484113072,
+      "invert": false
+    }
+  }
+}

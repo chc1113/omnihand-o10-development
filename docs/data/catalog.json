@@ -1,0 +1,1118 @@
+{
+  "jsonl_files": [
+    {
+      "path": "projects/o10_single_tactile/records/live_idle_full_10hz_15s.jsonl",
+      "kind": "jsonl",
+      "records": 150,
+      "summary_rows": 1,
+      "bytes": 547212,
+      "sha256": "a9aabe3d1329b28e67bd11ca2b1fe020dd623e90976cbe5949cc8249cd6155b0",
+      "first_wall_time": 1789736766.9351623,
+      "last_wall_time": 1789736781.8356185,
+      "actual_poll_hz": 9.999953014880456,
+      "notes": "2026-09-18 右手空载基线",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 150,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 150,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 150,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 150,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 150,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 150,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 150,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_single_vision/data/calibration_samples.jsonl",
+      "kind": "jsonl",
+      "records": 427,
+      "summary_rows": 0,
+      "bytes": 848940,
+      "sha256": "cde1499ddb855b62b184995023c775b41252ab23cc68a33d83b7a5d733c74c2e",
+      "first_wall_time": 1789557017.5966523,
+      "last_wall_time": 1789557220.489224,
+      "actual_poll_hz": "",
+      "notes": "个人标定样本；不是通用人群训练集",
+      "pose_counts": {
+        "neutral": 61,
+        "together": 61,
+        "spread": 61,
+        "fist": 61,
+        "thumb_abducted": 61,
+        "thumb_opposed": 61,
+        "thumb_bent": 61
+      },
+      "point_counts": {
+        "21": 427
+      },
+      "feature_names": [
+        "index_curl",
+        "index_spread",
+        "middle_curl",
+        "pinky_curl",
+        "pinky_spread",
+        "ring_curl",
+        "ring_spread",
+        "thumb_abad",
+        "thumb_curl",
+        "thumb_roll",
+        "thumb_spread"
+      ]
+    },
+    {
+      "path": "projects/o10_single_vision/logs/hand_actions.jsonl",
+      "kind": "jsonl",
+      "records": 23,
+      "summary_rows": 0,
+      "bytes": 4254,
+      "sha256": "5670d420ec034fd50f0598d3c23a644aacc5277a3360f9c8b6ea4e4aabcbaadd",
+      "first_wall_time": 1789379351.3843663,
+      "last_wall_time": 1789381941.4989796,
+      "actual_poll_hz": "",
+      "notes": "早期动作识别事件记录",
+      "action_counts": {
+        "NO_HAND": 8,
+        "OPEN": 8,
+        "HAND": 3,
+        "FIST": 1,
+        "PINCH": 2,
+        "POINT": 1
+      }
+    },
+    {
+      "path": "projects/o10_single_vision/logs/real_hand_session.jsonl",
+      "kind": "jsonl",
+      "records": 5872,
+      "summary_rows": 0,
+      "bytes": 2948395,
+      "sha256": "e07094caeb2f0e440774552cf4025d2fcaa00552ca02e7ed348c4da434fb36e6",
+      "first_wall_time": 1789562789.5966763,
+      "last_wall_time": 1789903272.1963315,
+      "actual_poll_hz": "",
+      "notes": "多次真机跟随运行累计；不等于连续单次试验",
+      "measured_nonnull_records": 5872,
+      "command_lengths": {
+        "10": 5872
+      },
+      "measured_lengths": {
+        "10": 5872
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/full_10hz.jsonl",
+      "kind": "jsonl",
+      "records": 100,
+      "summary_rows": 1,
+      "bytes": 364887,
+      "sha256": "36d305a4e52c7fc84a4db12e5d8e23c3aefee2a58bba2b1ddb31f41eb19a1516",
+      "first_wall_time": 1789268581.6713555,
+      "last_wall_time": 1789268591.5721247,
+      "actual_poll_hz": 9.999917450681329,
+      "notes": "早期全量读取 10 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/full_10hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 3000,
+      "summary_rows": 1,
+      "bytes": 10871881,
+      "sha256": "0367d4f7dd60928ce543e672e213d20e6b1d30e6e59f52a08311c3cae01444fe",
+      "first_wall_time": 1789269939.2343469,
+      "last_wall_time": 1789270239.1339917,
+      "actual_poll_hz": 9.999997335567375,
+      "notes": "早期全量读取长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 3000,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 3000,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 2558,
+          "maximum": 1,
+          "maximum_region_sum": 1
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/full_2hz.jsonl",
+      "kind": "jsonl",
+      "records": 12,
+      "summary_rows": 1,
+      "bytes": 45671,
+      "sha256": "07b61a3da9c39acd143d5b9bc3069df12f6ea44d9ce25a0dc5a2c331681fec0c",
+      "first_wall_time": 1789268342.1422133,
+      "last_wall_time": 1789268347.642084,
+      "actual_poll_hz": 1.9999492789530082,
+      "notes": "早期全量读取 2 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 12,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 12,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 12,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 12,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 12,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 12,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 12,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/full_5hz.jsonl",
+      "kind": "jsonl",
+      "records": 50,
+      "summary_rows": 1,
+      "bytes": 182935,
+      "sha256": "6e23c7621b860ee1e9c11ded6a0caadabe3672f4f4317bad1ccf6ef6bb7c30be",
+      "first_wall_time": 1789268411.5914857,
+      "last_wall_time": 1789268421.3920069,
+      "actual_poll_hz": 4.999964191756447,
+      "notes": "早期全量读取 5 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 50,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 50,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 50,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 50,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 50,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 50,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 50,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/left_full_no_tactile_10hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 3000,
+      "summary_rows": 1,
+      "bytes": 6631043,
+      "sha256": "ed749d4e68748792bafcacc43dd60150a6993adabf2ff3fb4bac98e5e197c32d",
+      "first_wall_time": 1789271186.6492844,
+      "last_wall_time": 1789271486.5494628,
+      "actual_poll_hz": 9.999997273567413,
+      "notes": "左手全状态读取，不请求触觉",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/left_full_with_tactile_probe.jsonl",
+      "kind": "jsonl",
+      "records": 100,
+      "summary_rows": 1,
+      "bytes": 365073,
+      "sha256": "4b9135030b15aa1cc28783b2df8d848f939bd254131f84b6a7c1787a98e7bc74",
+      "first_wall_time": 1789270973.9096284,
+      "last_wall_time": 1789270993.7102377,
+      "actual_poll_hz": 4.999983668553251,
+      "notes": "左手触觉只读探测；不能由零值推定压力响应已通过",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 99,
+          "maximum": 1,
+          "maximum_region_sum": 1
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/left_positions_50hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 15000,
+      "summary_rows": 1,
+      "bytes": 4617149,
+      "sha256": "7c0c8936532bec44b37abcac1d6e2ca4602ffa19c146764b3976788e5443d269",
+      "first_wall_time": 1789270661.8017824,
+      "last_wall_time": 1789270961.781865,
+      "actual_poll_hz": 49.999987149836635,
+      "notes": "左手位置长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/positions_20hz.jsonl",
+      "kind": "jsonl",
+      "records": 200,
+      "summary_rows": 1,
+      "bytes": 61534,
+      "sha256": "9ce7524f77e444077a061db5414adbfed60655f9b9dcb59253a7df86c21f20c7",
+      "first_wall_time": 1789268357.3994641,
+      "last_wall_time": 1789268367.3492293,
+      "actual_poll_hz": 19.99984685717262,
+      "notes": "早期位置读取 20 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/positions_50hz.jsonl",
+      "kind": "jsonl",
+      "records": 500,
+      "summary_rows": 1,
+      "bytes": 153690,
+      "sha256": "ce656eb0b9dfb58f12b97c7de67778c4645f81a7b1022c69c0b5901f8128e7e6",
+      "first_wall_time": 1789268561.7147093,
+      "last_wall_time": 1789268571.694443,
+      "actual_poll_hz": 49.99959642325659,
+      "notes": "早期位置读取 50 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/positions_50hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 15000,
+      "summary_rows": 1,
+      "bytes": 4617117,
+      "sha256": "26898c6953fe9a0991dca63cce7fc585310c8d9d16ed7721d489ce38b360905b",
+      "first_wall_time": 1789269564.8105133,
+      "last_wall_time": 1789269864.804222,
+      "actual_poll_hz": 49.99771688892336,
+      "notes": "早期位置读取长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/positions_5hz.jsonl",
+      "kind": "jsonl",
+      "records": 40,
+      "summary_rows": 1,
+      "bytes": 12710,
+      "sha256": "a0ad4a42f9de94349b0a8e34abf2e8586acf912b92cacf5cbce6930f67089842",
+      "first_wall_time": 1789268299.092042,
+      "last_wall_time": 1789268306.8916976,
+      "actual_poll_hz": 4.99994897677069,
+      "notes": "早期位置读取 5 Hz",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/right_full_10hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 3000,
+      "summary_rows": 1,
+      "bytes": 10875288,
+      "sha256": "678569c600b72ba5db6b5d1d96897ab6012f2485dd1d681aa76b04a445c28810",
+      "first_wall_time": 1789272334.3517258,
+      "last_wall_time": 1789272634.2510965,
+      "actual_poll_hz": 9.999998359133585,
+      "notes": "右手空载全状态及降采样触觉基线",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 3000,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 3000,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 3000,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/right_positions_50hz_5min.jsonl",
+      "kind": "jsonl",
+      "records": 15000,
+      "summary_rows": 1,
+      "bytes": 4617141,
+      "sha256": "49cba2517f0c2a09bc63483d5c4913fe1ff575428eed39e89fe1efa7688ef3ae",
+      "first_wall_time": 1789272024.5236247,
+      "last_wall_time": 1789272324.5037923,
+      "actual_poll_hz": 49.99998772516966,
+      "notes": "右手位置长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/right_thumb_pressure_10hz_30s.jsonl",
+      "kind": "jsonl",
+      "records": 300,
+      "summary_rows": 1,
+      "bytes": 1096046,
+      "sha256": "6864b1b9bcfeba024a4fd8007c5128de7bd4b8963e266781259adad76a1307d0",
+      "first_wall_time": 1789284294.430227,
+      "last_wall_time": 1789284324.3302884,
+      "actual_poll_hz": 9.999970962417782,
+      "notes": "右拇指受压；其余区域未施压",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 300,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 300,
+          "maximum": 150,
+          "maximum_region_sum": 887
+        },
+        "tactile_index": {
+          "frames": 300,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 300,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 300,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 300,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 300,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 300,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/right_thumb_release_10hz_10s.jsonl",
+      "kind": "jsonl",
+      "records": 100,
+      "summary_rows": 1,
+      "bytes": 366275,
+      "sha256": "ca67a74e1e59e58d8a04fb114bebfe3baeb821a3c2e9392c2e6cd36614b49008",
+      "first_wall_time": 1789284376.3256555,
+      "last_wall_time": 1789284386.2258956,
+      "actual_poll_hz": 9.999917379684616,
+      "notes": "右拇指松开回零",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 100,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 100,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/wire_full.jsonl",
+      "kind": "jsonl",
+      "records": 1,
+      "summary_rows": 1,
+      "bytes": 5787,
+      "sha256": "57e23e0790a0e457c9bc892fb24b3c319244fce050673c532f9e8668ae416b63",
+      "first_wall_time": 1789268655.5803785,
+      "last_wall_time": 1789268655.5803785,
+      "actual_poll_hz": 0.9999019636119001,
+      "notes": "早期全量协议抓取样例，非长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {
+        "tactile_thumb": {
+          "frames": 1,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_index": {
+          "frames": 1,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_middle": {
+          "frames": 1,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_ring": {
+          "frames": 1,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_little": {
+          "frames": 1,
+          "lengths": [
+            16
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_palm": {
+          "frames": 1,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        },
+        "tactile_dorsum": {
+          "frames": 1,
+          "lengths": [
+            25
+          ],
+          "nonzero_frames": 0,
+          "maximum": 0,
+          "maximum_region_sum": 0
+        }
+      }
+    },
+    {
+      "path": "projects/o10_usb_phase1/records/wire_positions.jsonl",
+      "kind": "jsonl",
+      "records": 2,
+      "summary_rows": 1,
+      "bytes": 1152,
+      "sha256": "aee1a82aee8dd39d81b5c801a541acd3dbd9fa53e663bd81227cec60088f3777",
+      "first_wall_time": 1789268643.0590487,
+      "last_wall_time": 1789268643.5590374,
+      "actual_poll_hz": 1.9998028734312385,
+      "notes": "早期位置协议抓取样例，非长测",
+      "failed_or_empty_calls": 0,
+      "tactile": {}
+    }
+  ],
+  "other_data_files": [
+    {
+      "path": "projects/o10_single_vision/data/a0.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 77636,
+      "sha256": "d30b9c66ee82ade74ca4c1c36dff6fcdbe7e9bb78e8aa30c48830728740b616a",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/a1.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 76523,
+      "sha256": "67ead8f50e9f5ab284fbc23dd8e6fb7978169a1e4f5dde3d915401ba608ae1e6",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/a2.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 76874,
+      "sha256": "0638fc317c3ae0cb8fb69cd976e9b7864ff7ef4a98c6b2f5d8ac96bdd7ab289c",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/calibration_right_v1_wrong_anchors_20260916.json",
+      "kind": "json",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 1222,
+      "sha256": "cc37d265eb5544ad3426bc4cb0e3415d43f644f317c2a7db5ed42016c5ff7d4c",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "已废弃的错误锚点标定，仅作追溯，禁止加载"
+    },
+    {
+      "path": "projects/o10_single_vision/data/joint_sweep.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 1455506,
+      "sha256": "3987c7d2d75720127b3b2b642024baa05b9af928d4be178a3831381664f3c54c",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/official_paper_ok.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 235339,
+      "sha256": "ae02093af2cf0994238c7282232d33c6f48620eeacec35b00025ded09e22b440",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/thumb_abad_choice.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 226742,
+      "sha256": "1535ff939f2cc30c37bf28652c20f88c3aa2450f03fcf1b1958e56a51ba297d1",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/thumb_fist_grid.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 590644,
+      "sha256": "f2718fb63ddfe442d5905f678a515440bb147b2c892d7b9b71f1d2bda684e094",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/thumb_fist_grid_back.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 827439,
+      "sha256": "aa95cf3981639315b29dad7b585b4f285efc3f3d8ed86a8a3c09efd727219403",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/thumb_fist_grid_outside.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 833984,
+      "sha256": "2afe9c8104ca2b4316d03daad399714b75d0ca981ed4c5a826ecf3abc78d0a75",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/v4_corrected_screenshot_poses.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 164829,
+      "sha256": "77bd3c343252e0d79ab7cdbd3328c5a27590850f230523541c9e759831cac595",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    },
+    {
+      "path": "projects/o10_single_vision/data/v4_predicted_screenshot_poses.png",
+      "kind": "png",
+      "records": "",
+      "summary_rows": "",
+      "bytes": 172848,
+      "sha256": "73cb0c7ac5052c6579076a60229e39db9a073c88f50dea10c0a9e078f3aa06c6",
+      "first_wall_time": "",
+      "last_wall_time": "",
+      "actual_poll_hz": "",
+      "notes": "历史生成的模型/姿态对比图"
+    }
+  ]
+}

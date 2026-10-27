@@ -1,0 +1,4 @@
+.venv*/
+__pycache__/
+*.py[cod]
+# Experimental logs, calibration samples and images are intentionally tracked.

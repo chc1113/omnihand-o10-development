@@ -1,0 +1,39 @@
+{
+  "camera_index": 0,
+  "model_config": "config/omnihand_right_model.json",
+  "width": 640,
+  "height": 480,
+  "fps": 30,
+  "max_num_hands": 1,
+  "model_complexity": 0,
+  "min_detection_confidence": 0.6,
+  "min_tracking_confidence": 0.6,
+  "smoothing_alpha": 0.35,
+  "required_hand": "Right",
+  "min_handedness_score": 0.55,
+  "calibration_profile": "config/calibration_right.json",
+  "gesture_preset_profile": "config/official_gestures_right.json",
+  "gesture_confirm_frames": 3,
+  "open_max_bend": 0.30,
+  "fist_min_bend": 0.60,
+  "point_index_max_bend": 0.35,
+  "point_other_min_bend": 0.50,
+  "pinch_max_normalized_distance": 0.35,
+  "feature_ranges": {
+    "thumb_roll": {"low": -0.65, "high": 0.65},
+    "thumb_abad": {"low": -0.35, "high": 1.15},
+    "thumb_curl": {"low": 0.04, "high": 0.82},
+    "index_curl": {"low": 0.03, "high": 0.92},
+    "middle_curl": {"low": 0.03, "high": 0.92},
+    "ring_curl": {"low": 0.03, "high": 0.92},
+    "pinky_curl": {"low": 0.03, "high": 0.92},
+    "index_spread": {"low": 0.02, "high": 0.32},
+    "ring_spread": {"low": 0.02, "high": 0.27},
+    "pinky_spread": {"low": 0.06, "high": 0.48}
+  },
+  "joint_mapping": {
+    "R_thumb_abad_joint": {"invert": true},
+    "R_index_abad_joint": {"invert": true}
+  },
+  "log_path": "logs/hand_actions.jsonl"
+}

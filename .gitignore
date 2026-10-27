@@ -1,0 +1,13 @@
+# Rebuild environments locally; retain experiment data and native SDK binaries.
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+.phase1_env
+.venv_config
+.env
+.env.local

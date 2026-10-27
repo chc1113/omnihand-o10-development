@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "feature_ranges": {
+    "thumb_curl": {
+      "low": 0.07899345853840287,
+      "high": 0.4495151255210542,
+      "invert": false
+    },
+    "index_curl": {
+      "low": 0.1730103596486665,
+      "high": 0.7666942202654633,
+      "invert": false
+    },
+    "middle_curl": {
+      "low": 0.17034842344689718,
+      "high": 0.7672621881977989,
+      "invert": false
+    },
+    "ring_curl": {
+      "low": 0.12776107168744402,
+      "high": 0.7504727978956626,
+      "invert": false
+    },
+    "pinky_curl": {
+      "low": 0.16458584199521203,
+      "high": 0.8088581511694865,
+      "invert": false
+    },
+    "index_spread": {
+      "low": 0.3001639767424482,
+      "high": 0.7593363932162663,
+      "invert": false
+    },
+    "ring_spread": {
+      "low": -0.39871352103010954,
+      "high": -0.20368218782004094,
+      "invert": false
+    },
+    "pinky_spread": {
+      "low": -0.3251817554410575,
+      "high": 0.11236185620034578,
+      "invert": false
+    },
+    "thumb_roll": {
+      "low": -0.7982022335987841,
+      "high": -0.5126558704546593,
+      "invert": false
+    },
+    "thumb_abad": {
+      "low": 0.7424938563144965,
+      "high": 0.8459946297493598,
+      "invert": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# O10 USB-only read/feedback validation configuration.
+# Keep the unused hand explicitly disabled so the node cannot try another bus.
+/**:
+  ros__parameters:
+    left_hand:
+      connection_type: ""
+
+    right_hand:
+      hand_device_id: 1
+      connection_type: "usb"
+      # The released ROS2 node derives its node name from this string and
+      # rejects '-' in a by-id path. Use the current tty alias for this node
+      # smoke test; Python tools continue to use the stable by-id path.
+      uart_port: "/dev/ttyACM0"
+      request_interval_ms: 0
+      frame_recv_timeout_ms: 100
+      show_data_details: false

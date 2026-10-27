@@ -1,0 +1,137 @@
+--- a/docs/references/触觉相关资料.md
++++ b/docs/references/触觉相关资料.md
+@@ -2,7 +2,7 @@
+ 
+ 整理日期：2026-09-21。面向尚无触觉与反馈控制基础的 O10 单触觉项目开发者。
+ 
+-依据：[DATA_REVIEW.md](/home/chc/O10/o10_single_tactile/docs/DATA_REVIEW.md)、[2026-09-18 空载验证](/home/chc/O10/o10_single_tactile/docs/LIVE_VALIDATION_20260918.md)，以及下列在线仓库、论文摘要、项目页和部分方法正文。在线阅读核对不等于安装运行或完成论文复现。
++依据：[DATA_REVIEW.md](../../projects/o10_single_tactile/docs/DATA_REVIEW.md)、[2026-09-18 空载验证](../../projects/o10_single_tactile/docs/LIVE_VALIDATION_20260918.md)，以及下列在线仓库、论文摘要、项目页和部分方法正文。在线阅读核对不等于安装运行或完成论文复现。
+ 
+ ## 1. 先知道自己正在做什么
+ 
+@@ -51,9 +51,9 @@
+ 
+ 先读本地版本，方便与已经验证的实验保持一致：
+ 
+-- [SDK 中文首页](/home/chc/O10/o10_single_tactile/sdk/agillink_omnihand_sdk-main/README_zh_cn.md)。
+-- [O10 Python API](/home/chc/O10/o10_single_tactile/sdk/agillink_omnihand_sdk-main/doc/zh_cn/API_PYTHON_O10.md)。
+-- [O10 运动学 Python API](/home/chc/O10/o10_single_tactile/sdk/agillink_omnihand_sdk-main/doc/zh_cn/API_KINEMATICS_PYTHON_O10.md)。
++- [SDK 中文首页](../../projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/README_zh_cn.md)。
++- [O10 Python API](../../projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/doc/zh_cn/API_PYTHON_O10.md)。
++- [O10 运动学 Python API](../../projects/o10_single_tactile/sdk/agillink_omnihand_sdk-main/doc/zh_cn/API_KINEMATICS_PYTHON_O10.md)。
+ 
+ 阅读任务：自己整理一张表，列出 `get_tactile_sensor_data()`、批量位置读写、角度、电流、温度、错误状态分别返回什么，单位是什么，失败返回什么。再核对 O10 的关节索引图，不要把 O12 或 UMI 的能力套到 O10。
+ 
+--- a/projects/o10_single_vision/.gitignore
++++ b/projects/o10_single_vision/.gitignore
+@@ -1,7 +1,4 @@
+-.venv/
++.venv*/
+ __pycache__/
+ *.py[cod]
+-logs/*.jsonl
+-data/*
+-!data/.gitkeep
+-
++# Experimental logs, calibration samples and images are intentionally tracked.
+--- a/projects/o10_single_vision/README.md
++++ b/projects/o10_single_vision/README.md
+@@ -30,7 +30,7 @@
+ ## 启动
+ 
+ ```bash
+-cd /home/chc/O10/o10_single_vision
++cd projects/o10_single_vision  # 从仓库根目录开始
+ bash scripts/run.sh
+ ```
+ 
+@@ -59,7 +59,7 @@
+ 
+ ## MuJoCo 虚拟手仿真
+ 
+-本机已有 MuJoCo 3.10。启动摄像头驱动的虚拟右手：
++先运行 `bash scripts/setup_env.sh` 安装含 MuJoCo 3.10.0 的项目环境。下列命令均在本子项目目录中执行。启动摄像头驱动的虚拟右手：
+ 
+ ```bash
+ .venv/bin/python scripts/validate_model.py
+@@ -104,7 +104,7 @@
+ bash scripts/run_real.sh --arm REAL_HAND
+ ```
+ 
+-真机窗口连续识别右手 12 帧后显示 READY；还必须按 `a` 才开始发送。空格暂停，`q` 或 Esc 停止。首轮控制限制为初始实测姿态附近每关节全行程的 8%，单周期变化不超过全行程的 1%，丢手超过 0.25 秒立即停止写入。
++真机窗口连续识别右手 12 帧后显示 READY；还必须按 `a` 才开始发送。空格暂停，`q` 或 Esc 停止。当前保存的配置是第三轮真机参数：完整模型关节范围、30 Hz、速度倍率 6、单周期最大步进 5%、平滑系数 0.25；丢手超过 0.25 秒立即停止写入。早期 8% 工作范围、1% 步进属于历史试验，不代表当前配置。
+ 
+ ## 当前六项阶段状态
+ 
+@@ -112,8 +112,8 @@
+ 2. 连续重定向：已实现基础版本。
+ 3. 被动关节耦合：已实现 MJCF 多项式版本。
+ 4. 离线预览：已实现，不发命令。
+-5. 动作标定采集：已实现，需现场采集数据。
+-6. 真机控制：SDK 桥接和双重解锁已实现；需个人标定、仿真验收和设备在线后执行低幅测试。
++5. 动作标定采集：已实现；保存了 427 条样本和版本 4 标定配置，换人后需重新检查或标定。
++6. 真机控制：已完成现场跟随试验并保留累计日志；尚缺跟踪误差、端到端延迟和长时间稳定性量化验收，详见 [最新工作总结](docs/工作总结_单视觉项目.md)。
+ 
+ ## 配置
+ 
+@@ -131,4 +131,4 @@
+ bash scripts/setup_env.sh
+ ```
+ 
+-脚本使用系统 Python 3.10，在本目录 `.venv` 中安装固定兼容版本。O10 SDK 不复制到本项目；后续进入真机控制阶段时，应通过独立桥接/适配层引用，避免视觉进程直接抢占 USB 串口。
++脚本使用系统 Python 3.10，在本目录 `.venv` 中安装固定兼容版本。环境脚本从同仓库 `../o10_usb_phase1/sdk/` 安装官方 SDK wheel；模型路径引用同仓库 `../o10_single_tactile/models/`。请保留四个子项目的兄弟目录关系。
+--- a/projects/o10_single_vision/config/omnihand_right_model.json
++++ b/projects/o10_single_vision/config/omnihand_right_model.json
+@@ -1,7 +1,7 @@
+ {
+   "model_name": "omnihandT2_1",
+   "hand": "right",
+-  "source_root": "/home/chc/1769933923166393/omnihand_description-omnihandT2_1",
++  "source_root": "../o10_single_tactile/models/omnihand_description-omnihandT2_1",
+   "urdf": "assets/urdf/omnihand_right.urdf",
+   "mjcf": "assets/MJCF/omnihand_right.xml",
+   "active_joints": [
+--- a/projects/o10_single_vision/config/simulation.json
++++ b/projects/o10_single_vision/config/simulation.json
+@@ -3,8 +3,8 @@
+   "camera_width": 640,
+   "camera_height": 480,
+   "model_config": "config/omnihand_right_model.json",
+-  "source_mjcf": "/home/chc/1769933923166393/omnihand_description-omnihandT2_1/assets/MJCF/omnihand_right.xml",
+-  "source_asset": "/home/chc/1769933923166393/omnihand_description-omnihandT2_1/assets/MJCF/omnihand_asset.xml",
++  "source_mjcf": "../o10_single_tactile/models/omnihand_description-omnihandT2_1/assets/MJCF/omnihand_right.xml",
++  "source_asset": "../o10_single_tactile/models/omnihand_description-omnihandT2_1/assets/MJCF/omnihand_asset.xml",
+   "control_hz": 30,
+   "smooth_alpha": 0.25,
+   "required_hand": "Right",
+--- a/projects/o10_single_vision/requirements.txt
++++ b/projects/o10_single_vision/requirements.txt
+@@ -1,3 +1,4 @@
+ numpy==1.26.4
+ opencv-contrib-python==4.11.0.86
+ mediapipe==0.10.21
++mujoco==3.10.0
+--- a/projects/o10_single_vision/scripts/run_sim.sh
++++ b/projects/o10_single_vision/scripts/run_sim.sh
+@@ -9,9 +9,7 @@
+   exit 2
+ fi
+ 
+-# MuJoCo 3.10 is already installed in the user's shared Python 3.10 site.
+-# Keep the project packages first, while making that existing install visible.
+-export PYTHONPATH="/home/chc/.local/lib/python3.10/site-packages${PYTHONPATH:+:$PYTHONPATH}"
++# MuJoCo is installed in this project environment by setup_env.sh.
+ cd "$PROJECT_DIR"
+ exec "$PYTHON" scripts/sim_hand_camera.py "$@"
+ 
+--- a/projects/o10_single_vision/scripts/setup_env.sh
++++ b/projects/o10_single_vision/scripts/setup_env.sh
+@@ -17,7 +17,7 @@
+ SITE_PACKAGES="$($VENV/bin/python -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])')"
+ "$PYTHON_BIN" -m pip install --upgrade --target "$SITE_PACKAGES" -r "$PROJECT_DIR/requirements.txt"
+ 
+-SDK_WHEEL="/home/chc/O10/o10_usb_phase1/sdk/agillink_omnihand_sdk-main/linux/x64/python/omnihand-1.1.5-cp310-cp310-linux_x86_64.whl"
++SDK_WHEEL="$PROJECT_DIR/../o10_usb_phase1/sdk/agillink_omnihand_sdk-main/linux/x64/python/omnihand-1.1.5-cp310-cp310-linux_x86_64.whl"
+ if [[ -f "$SDK_WHEEL" ]]; then
+   "$PYTHON_BIN" -m pip install --upgrade --target "$SITE_PACKAGES" "$SDK_WHEEL"
+ fi
